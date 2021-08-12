@@ -1,9 +1,9 @@
-import BLOCKS from "./blocks"
+import BLOCKS from "./blocks.js"
 
 const playground = document.querySelector(".playground > ul")
 const gameText = document.querySelector(".game-text")
 const scoreDisplay = document.querySelector(".score")
-const restartButton = document.querySelector(".game-text >button")
+const restartButton = document.querySelector(".game-text > button")
 
 const GAME_ROWS = 20
 const GAME_COLS = 10
