@@ -1,4 +1,4 @@
-import BLOCKS from './blocks.js'
+import BLOCKS from "./blocks"
 
 const playground = document.querySelector(".playground > ul")
 const gameText = document.querySelector(".game-text")
