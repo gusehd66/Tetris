@@ -5,6 +5,11 @@ const gameText = document.querySelector(".game-text")
 const scoreDisplay = document.querySelector(".score")
 const restartButton = document.querySelector(".game-text > button")
 
+const leftBtn = document.querySelectorAll(".controller span")[0]
+const downBtn = document.querySelectorAll(".controller span")[1]
+const transBtn = document.querySelectorAll(".controller span")[2]
+const rightBtn = document.querySelectorAll(".controller span")[3]
+
 const GAME_ROWS = 20
 const GAME_COLS = 10
 
@@ -171,6 +176,28 @@ document.addEventListener("keydown", e => {
     default:
       break
   }
+})
+
+const keyMap = [leftBtn, downBtn, transBtn, rightBtn]
+keyMap.map(key => {
+  key.addEventListener("click", e => {
+    switch (e.target) {
+      case leftBtn:
+        moveBlock("left", -1)
+        break
+      case downBtn:
+        dropBlock()
+        break
+      case transBtn:
+        changeDirection("direction", 1)
+        break
+      case rightBtn:
+        moveBlock("left", 1)
+        break
+      default:
+        break
+    }
+  })
 })
 
 restartButton.addEventListener("click", () => {

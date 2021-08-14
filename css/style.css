@@ -55,6 +55,7 @@ body {
   height: 25px;
   outline: 1px solid #ccc;
 }
+
 .tree {
   background: #67c23a;
 }
@@ -72,4 +73,17 @@ body {
 }
 .elRight {
   background: #16a085;
+}
+
+.controller {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.controller span {
+  padding: 0 10px;
+  border: solid 1px black;
+  border-radius: 15px;
 }
